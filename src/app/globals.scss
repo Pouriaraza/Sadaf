@@ -1,0 +1,68 @@
+$SpaceGray: #aeaeae;
+$BgBlack: #000;
+$white: #fff;
+$Lightgray: #d3d3d3;
+
+@font-face {
+    font-family: CLASHDISPLAYLIGHT;
+    src: url(../../public/Fonts/CLASHDISPLAYEXTRALIGHT.OTF);
+}
+@font-face {
+    font-family: CLASHDISPLAYSEMIBOLD;
+    src: url(../../public/Fonts/CLASHDISPLAYSEMIBOLD.OTF);
+}
+@font-face {
+    font-family: CLASHDISPLAYMEDIUM;
+    src: url(../../public/Fonts/CLASHDISPLAYMEDIUM.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: CLASHDISPLAYLIGHT;
+    background-color: $BgBlack;
+    color: $white;
+    a {
+        text-decoration: none;
+        color: $SpaceGray;
+    }
+}
+
+.banner {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        padding-bottom: 1.5rem;
+        color: $SpaceGray;
+        font-size: 3rem;
+        position: relative;
+        &::after {
+            content: " ";
+            display: block;
+            width: 14rem;
+            height: 14rem;
+            background: url(../../public/Imgs/Animation.gif) center center no-repeat;
+            background-size: 12rem;
+            position: absolute;
+            top: 6rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    ul {
+        li {
+            font-size: 1.5rem;
+            list-style: none;
+            font-family: CLASHDISPLAYMEDIUM;
+            text-align: center;
+            color: $Lightgray;
+            margin-top: 5px;
+        }
+    }
+}
