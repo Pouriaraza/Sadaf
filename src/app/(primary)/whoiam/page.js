@@ -10,7 +10,8 @@ const Home = () => {
             <Navbar />
             <section className="grid-pagewho">
                 <div className="imge-pagewho">
-                    <Image src={Whoiamimg} alt="Whoiamimg" />
+                    {/* <Image src={Whoiamimg} alt="Whoiamimg" /> */}
+                    <img src="/Imgs/Frame.png" />
                 </div>
                 <div className="dis-pagewho">
                     <h2>Who Am I ?</h2><br /><br />
