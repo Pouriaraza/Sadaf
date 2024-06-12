@@ -1,5 +1,5 @@
 $SpaceGray: #aeaeae;
-$BgBlack: #000;
+$BgBlack: #0e0e0e;
 $white: #fff;
 $Lightgray: #d3d3d3;
 
@@ -15,7 +15,9 @@ $Lightgray: #d3d3d3;
     font-family: CLASHDISPLAYMEDIUM;
     src: url(../../public/Fonts/CLASHDISPLAYMEDIUM.OTF);
 }
-
+main {
+    padding: 0 2rem;
+}
 * {
     margin: 0;
     padding: 0;

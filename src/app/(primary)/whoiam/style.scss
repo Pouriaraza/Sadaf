@@ -1,0 +1,30 @@
+$blue: #3300ff;
+$yellow: #eac512;
+.blue {
+    color: $blue;
+    display: inline-block;
+}
+.yellow {
+    color: $yellow;
+    display: inline-block;
+}
+.grid-pagewho {
+    display: flex;
+    font-family: CLASHDISPLAYMEDIUM;
+    .dis-pagewho,
+    .imge-pagewho {
+        width: 50%;
+    }
+    .imge-pagewho {
+        img {
+            width: 70%;
+            height: auto;
+            object-fit: contain;
+            margin: auto;
+            display: block;
+        }
+    }
+    .dis-pagewho {
+        padding-left: 3rem;
+    }
+}
