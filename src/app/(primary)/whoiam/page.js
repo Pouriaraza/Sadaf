@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="imge-pagewho">
                     {/* <Image src={Whoiamimg} alt="Whoiamimg" /> */}
                     {/* <img src="/Imgs/Frame.png" /> */}
-                    <img src="/_next/static/media/Frame.png" />
+                    <img src="/_next/static/media/whoiam.png" />
                 </div>
                 <div className="dis-pagewho">
                     <h2>Who Am I ?</h2><br /><br />
