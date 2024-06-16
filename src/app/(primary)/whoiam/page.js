@@ -1,7 +1,7 @@
 import Navbar from "@/app/components/Navbar";
 import "./style.scss";
 import Image from "next/image";
-// import Whoiamimg from "../../../../public/Imgs/Frame.png"
+import Whoiamimg from "@/../public/whoiam.png"
 
 const Home = () => {
 
@@ -10,9 +10,7 @@ const Home = () => {
             <Navbar />
             <section className="grid-pagewho">
                 <div className="imge-pagewho">
-                    {/* <Image src={Whoiamimg} alt="Whoiamimg" /> */}
-                    {/* <img src="/Imgs/Frame.png" /> */}
-                    <img src="/_next/static/media/whoiam.png" />
+                    <Image src={Whoiamimg} alt="Whoiamimg" />
                 </div>
                 <div className="dis-pagewho">
                     <h2>Who Am I ?</h2><br /><br />
