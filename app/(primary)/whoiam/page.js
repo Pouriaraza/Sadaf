@@ -1,7 +1,7 @@
-import Navbar from "@/app/components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./style.scss";
 import Image from "next/image";
-import Whoiamimg from "@/../public/whoiam.png"
+import Whoiamimg from "../../../public/whoiam.png"
 
 const Home = () => {
 

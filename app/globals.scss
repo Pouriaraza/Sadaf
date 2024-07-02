@@ -5,15 +5,15 @@ $Lightgray: #d3d3d3;
 
 @font-face {
     font-family: CLASHDISPLAYLIGHT;
-    src: url(../../public/Fonts/CLASHDISPLAYEXTRALIGHT.OTF);
+    src: url(../public/Fonts/CLASHDISPLAYEXTRALIGHT.OTF);
 }
 @font-face {
     font-family: CLASHDISPLAYSEMIBOLD;
-    src: url(../../public/Fonts/CLASHDISPLAYSEMIBOLD.OTF);
+    src: url(../public/Fonts/CLASHDISPLAYSEMIBOLD.OTF);
 }
 @font-face {
     font-family: CLASHDISPLAYMEDIUM;
-    src: url(../../public/Fonts/CLASHDISPLAYMEDIUM.OTF);
+    src: url(../public/Fonts/CLASHDISPLAYMEDIUM.OTF);
 }
 main {
     padding: 0 2rem;
@@ -32,6 +32,10 @@ body {
         color: $SpaceGray;
     }
 }
+.mbody {
+    position: relative;
+    overflow: hidden;
+}
 
 .banner {
     display: flex;
@@ -49,7 +53,7 @@ body {
             display: block;
             width: 14rem;
             height: 14rem;
-            background: url(../../public/Imgs/Animation.gif) center center no-repeat;
+            background: url(../public/images/Animation.gif) center center no-repeat;
             background-size: 12rem;
             position: absolute;
             top: 6rem;
@@ -66,5 +70,26 @@ body {
             color: $Lightgray;
             margin-top: 5px;
         }
+    }
+}
+
+@media (min-width: 425px) {
+    .MOBILE-MENU {
+        display: none;
+    }
+    .menu-theme .desktopmenu {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .MOBILE-MENU {
+        display: block;
+    }
+    .navbar .desktopmenu {
+        display: none;
+    }
+    main {
+        padding: 0;
     }
 }

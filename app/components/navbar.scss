@@ -2,7 +2,8 @@ $SpaceGray: #aeaeae;
 $BgBlack: #000;
 $white: #fff;
 
-.menu-theme {
+.navbar {
+    overflow: hidden;
     nav {
         display: flex;
         justify-content: space-between;
@@ -21,21 +22,18 @@ $white: #fff;
 }
 .social {
     li {
-        padding: 1rem;
-        background-size: 1.5rem !important;
+        padding: 1.2rem;
+        background-size: 1.5rem;
         margin: 5px !important;
     }
     .mail {
-        background: url(../../../public/Imgs/icon/mail.png) center center no-repeat;
-        background-position-y: 13px;
+        background: url(../../public/images/icon/mail.png) center center no-repeat;
     }
     .be {
-        background: url(../../../public/Imgs/icon/be.png) center center no-repeat;
-        background-position-y: 13px;
+        background: url(../../public/images/icon/be.png) center center no-repeat;
     }
     .linkdin {
-        background: url(../../../public/Imgs/icon/Linkdin.png) center center no-repeat;
-        background-position-y: 5px;
+        background: url(../../public/images/icon/Linkdin.png) center center no-repeat;
     }
 }
 
@@ -107,6 +105,29 @@ $white: #fff;
                 position: absolute;
                 left: 0;
                 top: 50%;
+            }
+        }
+    }
+}
+.resize {
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        .menu {
+            // display: flex;
+            // flex-direction: column;
+            li {
+                margin: 5px;
+                font-size: 10px;
+            }
+        }
+        .social {
+            li {
+                padding: 10px;
+                background-position-y: 0px;
+                background-size: contain;
             }
         }
     }

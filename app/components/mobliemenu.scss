@@ -1,0 +1,47 @@
+.MOBILE-MENU {
+    height: 100px;
+    z-index: 999;
+    div:nth-child(2) {
+        background-color: rgb(27, 27, 27);
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        top: 0rem;
+        color: white;
+        z-index: 99;
+        padding: 1rem;
+        ul li {
+            list-style: none;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            a {
+                color: white;
+            }
+        }
+    }
+    .HAMBURGER-ICON {
+        span {
+            display: block;
+            width: 5ch;
+            margin-top: 10px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    svg {
+        width: 3rem;
+    }
+}
+.showMenuNav {
+    right: -2rem;
+    transition: all 1s;
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hideMenuNav {
+    right: -20rem;
+    transition: all 1s;
+}
