@@ -1,7 +1,26 @@
 .MOBILE-MENU {
     height: 100px;
+    padding: 10px 1rem;
     z-index: 999;
-    div:nth-child(2) {
+    display: flex;
+    .social {
+        display: flex;
+        height: fit-content;
+        .be,
+        .mail {
+            background-position-y: 4px;
+        }
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+    }
+    .menuhead {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    > div:nth-child(1) {
         background-color: rgb(27, 27, 27);
         width: 70%;
         height: 100vh;
@@ -25,7 +44,7 @@
             width: 5ch;
             margin-top: 10px;
             height: 2px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(174 174 174);
         }
     }
     svg {
@@ -44,4 +63,9 @@
 .hideMenuNav {
     right: -20rem;
     transition: all 1s;
+}
+@media (min-width: 425px) {
+    .MOBILE-MENU {
+        display: none;
+    }
 }

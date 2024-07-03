@@ -17,6 +17,7 @@ $Lightgray: #d3d3d3;
 }
 main {
     padding: 0 2rem;
+    min-height: 100vh;
 }
 * {
     margin: 0;
@@ -27,12 +28,13 @@ body {
     font-family: CLASHDISPLAYLIGHT;
     background-color: $BgBlack;
     color: $white;
+    min-height: 100vh;
     a {
         text-decoration: none;
         color: $SpaceGray;
     }
 }
-.mbody {
+main {
     position: relative;
     overflow: hidden;
 }

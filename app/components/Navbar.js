@@ -28,7 +28,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <ul >
+                <ul className='social'>
                     <li className='be'></li>
                     <li className='linkdin'></li>
                     <li className='mail'></li>

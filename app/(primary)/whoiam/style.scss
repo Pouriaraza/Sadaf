@@ -28,3 +28,17 @@ $yellow: #eac512;
         padding-left: 3rem;
     }
 }
+
+@media (max-width: 425px) {
+    .grid-pagewho {
+        display: flex;
+        flex-direction: column;
+        > div {
+            width: 100% !important;
+        }
+    }
+    .dis-pagewho {
+        padding: 0 1rem;
+        padding-left: 1rem !important;
+    }
+}

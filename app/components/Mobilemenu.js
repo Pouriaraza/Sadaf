@@ -1,20 +1,20 @@
 
 import { useState } from "react";
 import "./mobliemenu.scss"
+import Link from "next/link";
+import HeaderNavLink from "./HeaderNavLink";
+
+
 export default function Mobilemenu() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const menuItems = [
+        { label: `Work`, url: `/work` },
+        { label: `Who AmI?`, url: `/whoiam` },
+        { label: `Contact`, url: `/contact` }
 
+    ];
     return (
         <section className="MOBILE-MENU">
-            <div
-                className="HAMBURGER-ICON"
-                onClick={() => setIsNavOpen((prev) => !prev)}
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                 <div onClick={() => setIsNavOpen(false)}>
                     <svg
@@ -31,17 +31,27 @@ export default function Mobilemenu() {
                     </svg>
                 </div>
                 <ul>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
+                    <li><Link href="/" className='active'>Home</Link></li>
+                    {menuItems.map(({ url, label }, index) => (
+                        <HeaderNavLink key={index} href={url}>{label}</HeaderNavLink>
+                    ))}
                 </ul>
             </div>
+            <section className="menuhead">
+                <ul className="social">
+                    <li className='be'></li>
+                    <li className='linkdin'></li>
+                    <li className='mail'></li>
+                </ul>
+                <div className="HAMBURGER-ICON"
+                    onClick={() => setIsNavOpen((prev) => !prev)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </section>
         </section>
 
 
