@@ -1,6 +1,8 @@
 "use client"
 import { items } from "../../public/Item.json";
 import Carousel from "react-elastic-carousel";
+import Carousal from "@itseasy21/react-elastic-carousel";
+
 import styles from "./Elastic.scss";
 
 const breakPoints = [
@@ -17,7 +19,7 @@ export default function ElasticCarousel() {
                 <h1>Brand Design</h1>
             </div>
             <div className={styles.contWrapper}>
-                <Carousel breakPoints={breakPoints}>
+                <Carousal breakPoints={breakPoints}>
                     {elastic.map((item) => (
                         <div
                             key={item.id}
@@ -26,7 +28,7 @@ export default function ElasticCarousel() {
                             <img src={item.imageUrl} />
                         </div>
                     ))}
-                </Carousel>
+                </Carousal>
             </div>
         </div>
     );
