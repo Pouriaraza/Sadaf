@@ -9,7 +9,7 @@ import Mobilemenu from './Mobilemenu';
 
 const menuItems = [
     { label: `Work`, url: `/work` },
-    { label: `Who AmI?`, url: `/whoiam` },
+    { label: `Who Am I?`, url: `/whoiam` },
     { label: `Contact`, url: `/contact` }
 
 ];

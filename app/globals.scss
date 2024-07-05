@@ -61,6 +61,7 @@ main {
             top: 6rem;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: -5;
         }
     }
     ul {
@@ -73,6 +74,12 @@ main {
             margin-top: 5px;
         }
     }
+}
+.work .hHiReC {
+    background-color: #8b8b8b;
+}
+.rec div div img {
+    width: 100%;
 }
 
 @media (min-width: 425px) {

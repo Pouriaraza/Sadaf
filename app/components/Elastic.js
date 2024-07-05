@@ -24,9 +24,6 @@ export default function ElasticCarousel() {
                             className={styles.card}
                         >
                             <img src={item.imageUrl} />
-                            <div className={styles.title}>
-                                <h3>{item.title} </h3>
-                            </div>
                         </div>
                     ))}
                 </Carousel>
