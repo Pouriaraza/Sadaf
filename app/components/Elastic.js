@@ -1,8 +1,6 @@
 "use client"
 import { items } from "../../public/Item.json";
-import Carousel from "react-elastic-carousel";
 import Carousal from "@itseasy21/react-elastic-carousel";
-
 import styles from "./Elastic.scss";
 
 const breakPoints = [
