@@ -1,0 +1,26 @@
+{
+  "items": {
+    "elastic": [
+      {
+        "id": 1,
+        "title": "Photoshoots",
+        "imageUrl": "../images/cover5.png"
+      },
+      {
+        "id": 2,
+        "title": "Adventure",
+        "imageUrl": "../images/cover1.png"
+      },
+      {
+        "id": 3,
+        "title": "Events",
+        "imageUrl": "../images/cover2.png"
+      },
+      {
+        "id": 4,
+        "title": "Discovery",
+        "imageUrl": "../images/cover4(1).png"
+      }
+    ]
+  }
+}

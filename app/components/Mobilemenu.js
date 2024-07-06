@@ -33,7 +33,7 @@ export default function Mobilemenu() {
                 </div>
                 <ul>
                     <li><Link href="/" className='active'>Home</Link></li>
-                    <li onClick={() => show((prev) => !prev)} className='workitem'><Link href="/work" className='worka active'>Work</Link>
+                    <li onClick={() => show((prev) => !prev)} className='workitem'><Link href="#" className='worka active'>Work</Link>
                         <ul className={hide ? "showWork" : "hideWork"}>
                             <li><Link href="item1">Item1</Link></li>
                             <li><Link href="item1">Item1</Link></li>

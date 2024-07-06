@@ -1,7 +1,9 @@
 "use client"
-import { items } from "../../public/Item.json";
+import Navbar from "@/app/components/Navbar";
+import ElasticCarousel from "@/app/components/Elastic";
 import Carousal from "@itseasy21/react-elastic-carousel";
-import styles from "./Elastic.scss";
+import styles from "../Elastic.scss";
+import { items } from "./brandData.json";
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -9,25 +11,32 @@ const breakPoints = [
     { width: 768, itemsToShow: 2 },
     { width: 1200, itemsToShow: 3 }
 ];
-export default function ElasticCarousel() {
+
+const Home = () => {
     const { elastic } = items;
+
     return (
-        <div className="container">
-            <div className="title">
-                <h1>Brand Design</h1>
-            </div>
-            {/* <div className={styles.contWrapper}>
+        <section className="work">
+            <Navbar />
+            <ElasticCarousel />
+            <div className={styles.contWrapper}>
                 <Carousal breakPoints={breakPoints}>
                     {elastic.map((item) => (
                         <div
                             key={item.id}
                             className={styles.card}
                         >
+                            <div className="hoverbranditem">
+                                <p>Wow Email Marketing</p>
+                                <span>view more</span>
+                            </div>
                             <img src={item.imageUrl} />
                         </div>
                     ))}
                 </Carousal>
-            </div> */}
-        </div>
+            </div>
+        </section>
     );
 }
+
+export default Home;

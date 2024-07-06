@@ -24,8 +24,8 @@ const Navbar = () => {
                     <li><Link href="/" className='active'>Home</Link></li>
                     <li className='workitem'><Link href="/work" className='worka active'>Work</Link>
                         <ul className='inside-menu'>
-                            <li><Link href="item1">Item1</Link></li>
-                            <li><Link href="item1">Item1</Link></li>
+                            <li><Link href="/work/BrandDesign">Brand Design</Link></li>
+                            <li><Link href="/work/SocialMedia">Social Media</Link></li>
                         </ul>
                     </li>
                     {menuItems.map(({ url, label }, index) => (
