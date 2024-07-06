@@ -15,6 +15,7 @@ export default function ElasticCarousel() {
         <div className="container">
             <div className="title">
                 <h1>Brand Design</h1>
+
             </div>
             {/* <div className={styles.contWrapper}>
                 <Carousal breakPoints={breakPoints}>
