@@ -64,8 +64,26 @@
     right: -20rem;
     transition: all 1s;
 }
+.showWork {
+    visibility: visible;
+    opacity: 1;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+}
+.hideWork {
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+    height: 0;
+}
 @media (min-width: 425px) {
     .MOBILE-MENU {
         display: none;
+    }
+    .inside-menu {
+        height: 0;
     }
 }

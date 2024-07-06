@@ -7,8 +7,9 @@ import HeaderNavLink from "./HeaderNavLink";
 
 export default function Mobilemenu() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [hide, show] = useState(false);
+
     const menuItems = [
-        { label: `Work`, url: `/work` },
         { label: `Who AmI?`, url: `/whoiam` },
         { label: `Contact`, url: `/contact` }
 
@@ -32,6 +33,12 @@ export default function Mobilemenu() {
                 </div>
                 <ul>
                     <li><Link href="/" className='active'>Home</Link></li>
+                    <li onClick={() => show((prev) => !prev)} className='workitem'><Link href="/work" className='worka active'>Work</Link>
+                        <ul className={hide ? "showWork" : "hideWork"}>
+                            <li><Link href="item1">Item1</Link></li>
+                            <li><Link href="item1">Item1</Link></li>
+                        </ul>
+                    </li>
                     {menuItems.map(({ url, label }, index) => (
                         <HeaderNavLink key={index} href={url}>{label}</HeaderNavLink>
                     ))}
