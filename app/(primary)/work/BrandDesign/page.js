@@ -27,7 +27,7 @@ const Home = () => {
                             className={styles.card}
                         >
                             <div className="hoverbranditem">
-                                <p>Wow Email Marketing</p>
+                                <p>{item.title}</p>
                                 <span>view more</span>
                             </div>
                             <img src={item.imageUrl} />
