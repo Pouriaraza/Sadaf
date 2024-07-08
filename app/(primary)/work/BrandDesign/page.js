@@ -1,6 +1,5 @@
 "use client"
 import Navbar from "@/app/components/Navbar";
-import ElasticCarousel from "@/app/components/Elastic";
 import Carousal from "@itseasy21/react-elastic-carousel";
 import styles from "../Elastic.scss";
 import { items } from "./brandData.json";
@@ -16,10 +15,11 @@ const Home = () => {
     const { elastic } = items;
 
     return (
-        <section className="work">
+        <section className="work container">
             <Navbar />
-            <ElasticCarousel />
-            <div className={styles.contWrapper}>
+            <div className="title">
+                <h1>Brand Design</h1>
+            </div>            <div className={styles.contWrapper}>
                 <Carousal breakPoints={breakPoints}>
                     {elastic.map((item) => (
                         <div

@@ -1,9 +1,9 @@
 import Navbar from "@/app/components/Navbar";
 import "./SocialMedia1.scss";
-import firstpostimg from "../../../../public/images/firstpost/post.png"
-import secendpostimg from "../../../../public/images/secendpost/secendpost.png"
-import treepostimg from "../../../../public/images/treepost/treepost.png"
-import fourpostimg from "../../../../public/images/fourpost/fourpost.png"
+import firstpostimg from "../../../../../public/images/firstpost/post.png"
+import secendpostimg from "../../../../../public/images/secendpost/secendpost.png"
+import treepostimg from "../../../../../public/images/treepost/treepost.png"
+import fourpostimg from "../../../../../public/images/fourpost/fourpost.png"
 
 
 import { items } from "./SocialMedia1.json";

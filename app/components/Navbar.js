@@ -24,8 +24,19 @@ const Navbar = () => {
                     <li><Link href="/" className='active'>Home</Link></li>
                     <li className='workitem'><Link href="/work" className='worka active'>Work</Link>
                         <ul className='inside-menu'>
-                            <li><Link href="/work/BrandDesign">Brand Design</Link></li>
-                            <li><Link href="/work/SocialMedia">Social Media</Link></li>
+                            <li><Link href="/work/BrandDesign" className='BrandDesign'>Brand Design</Link>
+                                <ul>
+                                    <li><Link href="/work/BrandDesign/modernarch">Modern arch</Link></li>
+                                    <li><Link href="/work/BrandDesign/shana">Shana</Link></li>
+                                    <li><Link href="/work/BrandDesign/tourgo">tourgo</Link></li>
+                                </ul>
+                            </li>
+                            <li><Link href="/work/SocialMedia" className='SocialMedia'>Social Media</Link>
+                                <ul>
+                                    <li><Link href="/work/SocialMedia/Instagrampost">instagram post design</Link></li>
+                                    <li><Link href="/work/SocialMedia/instagramstory">instagram story design</Link></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     {menuItems.map(({ url, label }, index) => (

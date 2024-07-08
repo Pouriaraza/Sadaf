@@ -8,6 +8,7 @@ import HeaderNavLink from "./HeaderNavLink";
 export default function Mobilemenu() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [hide, show] = useState(false);
+    const [noterote, rote] = useState(false);
 
     const menuItems = [
         { label: `Who AmI?`, url: `/whoiam` },
@@ -33,10 +34,25 @@ export default function Mobilemenu() {
                 </div>
                 <ul>
                     <li><Link href="/" className='active'>Home</Link></li>
-                    <li onClick={() => show((prev) => !prev)} className='workitem'><Link href="#" className='worka active'>Work</Link>
+                    <li onClick={() => show((prev) => !prev)} className='workitem'>
+                        <Link href="#" className='work active' onClick={() => rote((prev) => !prev)}>Work</Link>
+                        <span className={noterote ? "notrote" : "rote"}></span>
+
                         <ul className={hide ? "showWork" : "hideWork"}>
-                            <li><Link href="/work/BrandDesign">Brand Design</Link></li>
-                            <li><Link href="/work/SocialMedia">Social Media</Link></li>
+                            <li className="BrandDesignA"><Link href="/work/BrandDesign">Brand Design</Link>
+                                <ul className="BrandDesignitem">
+                                    <li><Link href="/work/BrandDesign/modernarch">Modern arch</Link></li>
+                                    <li><Link href="/work/BrandDesign/shana">Shana</Link></li>
+                                    <li><Link href="/work/BrandDesign/tourgo">tourgo</Link></li>
+                                </ul>
+                            </li>
+                            <li className="SocialMediaA">
+                                <Link href="/work/SocialMedia" >Social Media</Link>
+                                <ul className="SocialMediaitem">
+                                    <li><Link href="/work/SocialMedia/Instagrampost">instagram post design</Link></li>
+                                    <li><Link href="/work/SocialMedia/instagramstory">instagram story design</Link></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     {menuItems.map(({ url, label }, index) => (
