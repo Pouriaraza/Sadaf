@@ -11,8 +11,9 @@ import Mockup from "../../../../../public/images/modernarch/Mockup.png"
 import orange from "../../../../../public/images/modernarch/orange.png"
 import pattern from "../../../../../public/images/modernarch/pattern.png"
 import VertcialBig from "../../../../../public/images/modernarch/VertcialBig.png"
-// import freeBus from "../../../../../public/images/modernarch/freeBus.png"
-// import free from "../../../../../public/images/modernarch/free.png"
+import freeBus from "../../../../../public/images/modernarch/freeBus.png"
+import free from "../../../../../public/images/modernarch/free.png"
+
 import iPhoneMock from "../../../../../public/images/modernarch/iPhoneMock.png"
 import Signon from "../../../../../public/images/modernarch/Signon.png"
 
@@ -87,8 +88,8 @@ const Home = () => {
                 <Image src={VertcialBig} alt="post" />
                 <Image src={orange} alt="post" />
                 <div className="brand">
-                    {/* <Image src={free} alt="post" />
-                    <Image src={freeBus} alt="post" /> */}
+                    <Image src={free} alt="post" />
+                    <Image src={freeBus} alt="post" />
                 </div>
                 <Image src={green} alt="post" />
                 <div className="brand">
