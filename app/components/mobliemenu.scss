@@ -35,7 +35,7 @@
     .HAMBURGER-ICON {
         span {
             display: block;
-            width: 5ch;
+            width: 4ch;
             margin-top: 10px;
             height: 2px;
             background-color: rgb(174 174 174);
@@ -44,13 +44,14 @@
     svg {
         width: 3rem;
     }
+    .BrandDesignA,
+    .SocialMediaA {
+        font-size: 1rem;
+    }
     .showMenuNav {
         right: -2rem;
         transition: all 1s;
-        .BrandDesignA,
-        .SocialMediaA {
-            font-size: 1rem;
-        }
+
         .SocialMediaitem,
         .BrandDesignitem {
             li {
@@ -139,7 +140,7 @@
     height: 0;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 460px) {
     .MOBILE-MENU {
         display: none;
     }

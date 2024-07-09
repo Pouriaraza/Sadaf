@@ -1,37 +1,4 @@
 .SocialMedia1 {
-    font-family: CLASHDISPLAYMEDIUM;
-    .first {
-        display: flex;
-        padding-top: 10rem;
-        width: 330px;
-        height: 60vh;
-        margin: auto;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        p {
-            font-family: CLASHDISPLAYLIGHT;
-        }
-    }
-    .post {
-        padding-top: 8rem;
-        > img {
-            margin: auto;
-            display: block;
-            width: 100%;
-            object-fit: contain;
-        }
-        .post-grid {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            img {
-                margin: 10px;
-            }
-        }
-    }
     .fourpost {
         .post-grid {
             flex-wrap: wrap;
@@ -43,9 +10,6 @@
 }
 
 @media (max-width: 768px) {
-    .post-grid {
-        flex-direction: column;
-    }
     .SocialMedia1 .fourpost .post-grid img {
         width: 80%;
     }
