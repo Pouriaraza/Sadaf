@@ -87,8 +87,8 @@ const Home = () => {
                 <Image src={VertcialBig} alt="post" />
                 <Image src={orange} alt="post" />
                 <div className="brand">
-                    <Image src={free} alt="post" />
-                    <Image src={freeBus} alt="post" />
+                    {/* <Image src={free} alt="post" />
+                    <Image src={freeBus} alt="post" /> */}
                 </div>
                 <Image src={green} alt="post" />
                 <div className="brand">
